@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CashCalculator</title>
+
+        <!-- Link to Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+
+        <!-- Link to Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+            rel="stylesheet">
+
+        <!-- Link to custom CSS -->
+        <link rel="stylesheet" href="css/cashCalc.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="welcome-section">
+                    <h2 class="mt-3">Cash Calculator</h1>
+                    <p class="lead">Calculator for all your needs.</p>
+                </div>
+
+                <div class="calculator-box mt-4">
+                    <h3>Enter Amount:</h3>
+                    <div class="mb-3 d-flex align-items-center">
+                        <input type="number" class="form-control me-2"
+                            id="amountDueEUR" id="eurInputId" value="0" step="0.10" min="0"
+                            oninput="syncFromEUR('amountDueEUR', 'amountDueBGN'); validateAndCalculate('amountDueEUR')">
+                        <span class="currency-label me-3">EUR</span>
+                        <input type="number" class="form-control me-2"
+                            id="amountDueBGN" id="bgnInputId" value="0" step="0.10" min="0"
+                            oninput="syncFromBGN('amountDueBGN', 'amountDueEUR'); validateAndCalculate('amountDueBGN')">
+                        <span class="currency-label">BGN</span>
+                    </div>
+
+                    <h3 class="h3">Enter Paid Amount:</h3>
+                    <div class="mb-3 d-flex align-items-center">
+                        <input type="number" class="form-control me-2"
+                            id="paidAmountEUR" id="eurInputId" value="0" step="0.10" min="0"
+                            oninput="syncFromEUR('paidAmountEUR', 'paidAmountBGN'); validateAndCalculate('paidAmountEUR')">
+                        <span class="currency-label me-3">EUR</span>
+                        <input type="number" class="form-control me-2"
+                            id="paidAmountBGN" id="bgnInputId" value="0" step="0.10" min="0"
+                            oninput="syncFromBGN('paidAmountBGN', 'paidAmountEUR'); validateAndCalculate('paidAmountBGN')">
+                        <span class="currency-label">BGN</span>
+                    </div>
+
+                    <div class="mt-4">
+                        <h3>Change:</h3>
+                        <p><strong>EUR:</strong> <span
+                                id="changeEUR">0.00</span></p>
+                        <p><strong>BGN:</strong> <span
+                                id="changeBGN">0.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Cash Calculator</p>
+        </footer>
+
+        <!-- Link to custom JS -->
+        <script src="js/cashCalc.js"></script>
+
+        <!-- Link to Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    </body>
+</html>

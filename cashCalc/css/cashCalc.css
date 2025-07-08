@@ -1,0 +1,85 @@
+/* BASIC SETTINGS FOR THE ENTIRE PAGE */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #6eb8f8, #1725a1);
+}
+
+/* BASIC SETTINGS FOR THE ENTIRE PAGE */
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*WELCOME SECTION */
+.welcome-section {
+    color: white;
+    padding: 0 0 0 0;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    font-weight: bolder;
+}
+
+.welcome-section p {
+    font-weight: bold;
+}
+
+/*WELCOME SECTION */
+
+/* CALCULATOR SECTION */
+.calculator-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 50px 20px 50px;
+}
+
+.calculator-box h3 {
+    font-weight: bold;
+    color: #003869;
+}
+
+.calculator-box .currency-label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #003869;
+}
+
+.calculator-box p {
+    font-weight: bold;
+    color: #003869;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.calculator-box p span {
+    font-weight: bold;
+    color: #003869;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.h3 {
+    padding-top: 15px;
+}
+
+/* CALCULATOR SECTION */
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background: linear-gradient(to left, #6eb8f8, #1725a1);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+}
+/* FOOTER */
