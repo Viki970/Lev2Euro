@@ -68,29 +68,32 @@ iframe#contentFrame {
   font-weight: 500;
   margin: 0 15px;
   color: #004e92 !important;
+}
+
+.navbar-nav .nav-link p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 15px;
+  color: #004e92 !important;
   transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link p:hover {
   color: #3399ff !important;
   transform: scale(1.25);
 }
 
 .navbar-nav .nav-link.active {
   background-color: rgba(0, 78, 146, 0.1);
-  /* лек син фон */
-  border-radius: 8px;
+  border-radius: 1rem;
   padding: 6px 12px;
   color: #004e92 !important;
 }
 
 /* NAVIGATION BAR */
 
-/* FOOTER
-footer {
-  width: 100%;
-  background: linear-gradient(to left, #6eb8f8, #1725a1);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-} */
+@media (max-width: 992px) {
+  .navbar-nav .nav-link p:hover {
+    transform: scaleY(1.25);
+  }
+}
