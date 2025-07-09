@@ -27,24 +27,49 @@ body {
     line-height: 1.9;
 }
 
-/* (По желание) малко стилизиране на заглавията вътре */
-.qna-box h3 {
+.qa-box h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #1725a1;
+    font-weight: bolder;
+}
 
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 60px;
-    /* <- зададен размер за заглавието */
+summary {
+    cursor: pointer;
+    color: #1725a1;
+    margin-bottom: 10px;
+}
+
+.animated-details .content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+
+.animated-details[open] .content {
+    max-height: 500px;
+    /* adjust depending on your content */
+}
+
+.highlight {
+    background-color: #fee8d6;
+    color: #856404;
+    padding: 0.15em 0.4em;
+    border-radius: 1rem;
     font-weight: 600;
 }
 
+
 /* FOOTER */
 footer {
-  width: 100%;
-  background: linear-gradient(to left, #6eb8f8, #1725a1);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
+    width: 100%;
+    background: linear-gradient(to left, #6eb8f8, #1725a1);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
 }
+
 /* FOOTER */
