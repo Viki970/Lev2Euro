@@ -60,7 +60,7 @@ iframe#contentFrame {
 
 .navbar-brand:hover {
   color: #3399ff !important;
-  transform: scale(1.25);
+  transform: scale(1.05);
 }
 
 .navbar-nav .nav-link {
@@ -80,7 +80,7 @@ iframe#contentFrame {
 
 .navbar-nav .nav-link p:hover {
   color: #3399ff !important;
-  transform: scale(1.25);
+  transform: scale(1.05);
 }
 
 .navbar-nav .nav-link.active {

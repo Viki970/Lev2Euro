@@ -28,20 +28,20 @@
       <div class="calculator-box mt-4">
         <h3>Enter Amount:</h3>
         <div class="mb-3 d-flex align-items-center">
-          <input type="number" class="form-control me-2" id="amountDueEUR" value="0" step="0.10" min="0"
+          <input type="number" class="form-control me-2" id="amountDueEUR" value="" placeholder="0.00" step="0.10" min="0"
             oninput="syncFromEUR('amountDueEUR', 'amountDueBGN'); validateAndCalculate('amountDueEUR')">
           <span class="currency-label me-3">EUR</span>
-          <input type="number" class="form-control me-2" id="amountDueBGN" value="0" step="0.10" min="0"
+          <input type="number" class="form-control me-2" id="amountDueBGN" value="" placeholder="0.00" step="0.10" min="0"
             oninput="syncFromBGN('amountDueBGN', 'amountDueEUR'); validateAndCalculate('amountDueBGN')">
           <span class="currency-label">BGN</span>
         </div>
 
         <h3 class="h3">Enter Paid Amount:</h3>
         <div class="mb-3 d-flex align-items-center">
-          <input type="number" class="form-control me-2" id="paidAmountEUR" value="0" step="0.10" min="0"
+          <input type="number" class="form-control me-2" id="paidAmountEUR" value="" placeholder="0.00" step="0.10" min="0"
             oninput="syncFromEUR('paidAmountEUR', 'paidAmountBGN'); validateAndCalculate('paidAmountEUR')">
           <span class="currency-label me-3">EUR</span>
-          <input type="number" class="form-control me-2" id="paidAmountBGN" value="0" step="0.10" min="0"
+          <input type="number" class="form-control me-2" id="paidAmountBGN" value="" placeholder="0.00" step="0.10" min="0"
             oninput="syncFromBGN('paidAmountBGN', 'paidAmountEUR'); validateAndCalculate('paidAmountBGN')">
           <span class="currency-label">BGN</span>
         </div>

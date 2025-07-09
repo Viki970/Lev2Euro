@@ -1,5 +1,5 @@
 // Algorithm for currency conversion between EUR and BGN
-const exchangeRate = 1.95580;
+const exchangeRate = 1.95583;
 
 // Начални валути
 let fromCurrency = "EUR";

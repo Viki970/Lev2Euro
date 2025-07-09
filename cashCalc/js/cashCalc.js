@@ -1,4 +1,4 @@
-const EUR_TO_BGN = 1.95580;
+const EUR_TO_BGN = 1.95583;
 
 const EUR_DENOMINATIONS = [500, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01];
 const BGN_DENOMINATIONS = [100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01];
