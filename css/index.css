@@ -55,12 +55,6 @@ iframe#contentFrame {
   text-decoration: none;
   cursor: default;
   margin: 0 25px 0 25px;
-  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.navbar-brand:hover {
-  color: #3399ff !important;
-  transform: scale(1.05);
 }
 
 .navbar-nav .nav-link {

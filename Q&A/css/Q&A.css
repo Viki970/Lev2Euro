@@ -1,4 +1,4 @@
-/* Синият фон за цялата Q&A секция */
+/* BASIC SETTINGS FOR THE ENTIRE PAGE */
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
@@ -7,15 +7,17 @@ body {
     background: linear-gradient(to left, #6eb8f8, #1725a1);
 }
 
+/* BASIC SETTINGS FOR THE ENTIRE PAGE */
+
+/* Section and article container */
 .qa {
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: center;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
 
-/* Бялото правоъгълно поле за текста */
 .qa-box {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
@@ -27,6 +29,7 @@ body {
     line-height: 1.9;
 }
 
+/* Main heading */
 .qa-box h2 {
     text-align: center;
     font-size: 40px;
@@ -35,33 +38,82 @@ body {
     font-weight: bolder;
 }
 
-summary {
-    cursor: pointer;
-    color: #1725a1;
-    margin-bottom: 10px;
-}
-
-.animated-details .content {
+/* Details (Q&A item) styling */
+details.animated-details {
+    border: 1.5px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 1rem;
     overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s ease;
+    transition: all 0.3s ease;
 }
 
-.animated-details[open] .content {
-    max-height: 500px;
-    /* adjust depending on your content */
-}
-
-.highlight {
-    background-color: #fee8d6;
-    color: #856404;
-    padding: 0.15em 0.4em;
-    border-radius: 1rem;
+/* Summary (question title) */
+details summary {
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    position: relative;
     font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #e0ebff;
+    color: #177fe6;
+    list-style: none;
+    user-select: none;
 }
 
+details summary:hover {
+    background-color: #bbd6ff;
+}
 
-/* FOOTER */
+/* Custom disclosure triangle */
+details summary::marker {
+    display: none;
+}
+
+details summary::after {
+    content: "▸";
+    position: absolute;
+    right: 1.2rem;
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+}
+
+/* Rotate arrow when open */
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+/* Content inside each Q&A */
+details .content {
+    padding: 1rem 1.5rem;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-top: 1.5px solid #dee2e6;
+}
+
+/* Highlight important info */
+.highlight {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.more-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.more-info p {
+    font-size: 1.2rem;
+    color: #1725a1;
+}
+
+.more-info a {
+    color: #177fe6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
 footer {
     width: 100%;
     background: linear-gradient(to left, #6eb8f8, #1725a1);
@@ -72,4 +124,8 @@ footer {
     bottom: 0;
 }
 
-/* FOOTER */
+@media (max-width: 768px) {
+    .qa-box {
+        margin: 0;
+    }
+}

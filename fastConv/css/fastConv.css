@@ -112,3 +112,9 @@ footer {
   bottom: 0;
 }
 /* FOOTER */
+
+@media (max-width: 768px) {
+  .converter-box {
+    margin: 0;
+  }
+}

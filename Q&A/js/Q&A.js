@@ -2,36 +2,21 @@ document.querySelectorAll(".animated-details").forEach(details => {
   const summary = details.querySelector("summary");
   const content = details.querySelector(".content");
 
+  content.style.maxHeight = "0px";
+  content.style.overflow = "hidden";
+  content.style.transition = "max-height 0.5s ease";
+
   summary.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent default toggle
+    e.preventDefault(); // prevent default toggle
 
     const isOpen = details.hasAttribute("open");
-
-    // Затваряне на всички останали отворени <details>
-    document.querySelectorAll(".animated-details[open]").forEach(openDetails => {
-      if (openDetails !== details) {
-        const openContent = openDetails.querySelector(".content");
-        openContent.style.maxHeight = openContent.scrollHeight + "px";
-        requestAnimationFrame(() => {
-          openContent.style.maxHeight = "0px";
-        });
-        setTimeout(() => {
-          openDetails.removeAttribute("open");
-        }, 500); // време за анимация
-      }
-    });
-
     if (isOpen) {
-      // Затваряне на текущото
-      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.maxHeight = content.scrollHeight + "px"; // set to current height
       requestAnimationFrame(() => {
         content.style.maxHeight = "0px";
       });
-      setTimeout(() => {
-        details.removeAttribute("open");
-      }, 500);
+      setTimeout(() => details.removeAttribute("open"), 300);
     } else {
-      // Отваряне на текущото
       details.setAttribute("open", "");
       content.style.maxHeight = "0px";
       requestAnimationFrame(() => {

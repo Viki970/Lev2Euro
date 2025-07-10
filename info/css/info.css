@@ -149,8 +149,18 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    .info-page {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .info-box {
+        margin: 1rem;
+        text-align: center;
+    }
     .section {
-        padding: 1.5rem;
+        margin: 1rem 0.3rem;
+        padding: 1rem 0.5rem;
     }
 }
  
