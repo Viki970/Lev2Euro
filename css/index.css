@@ -95,6 +95,10 @@ iframe#contentFrame {
   .navbar-nav .nav-link p:hover {
     transform: scaleY(1.25);
   }
+
+  #navbarNav .navbar-nav {
+  align-items: flex-start;
+}
 }
 
 @media (max-width: 1200px) {
