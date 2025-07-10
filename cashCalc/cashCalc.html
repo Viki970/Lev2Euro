@@ -21,12 +21,12 @@
   <main>
     <div class="container">
       <div class="welcome-section">
-        <h2 class="mt-3">Cash Calculator</h2>
+        <h2 class="mt-3">Калкулатор</h2>
         <p class="lead">Калкулатор за ресто в EUR и BGN с деноминация.</p>
       </div>
 
       <div class="calculator-box mt-4">
-        <h3>Enter Amount:</h3>
+        <h3>Въведи сума:</h3>
         <div class="mb-3 d-flex align-items-center">
           <input type="number" class="form-control me-2" id="amountDueEUR" value="" placeholder="0.00" step="0.10" min="0"
             oninput="syncFromEUR('amountDueEUR', 'amountDueBGN'); validateAndCalculate('amountDueEUR')">
@@ -36,7 +36,7 @@
           <span class="currency-label">BGN</span>
         </div>
 
-        <h3 class="h3">Enter Paid Amount:</h3>
+        <h3 class="h3">Въведи платена сума:</h3>
         <div class="mb-3 d-flex align-items-center">
           <input type="number" class="form-control me-2" id="paidAmountEUR" value="" placeholder="0.00" step="0.10" min="0"
             oninput="syncFromEUR('paidAmountEUR', 'paidAmountBGN'); validateAndCalculate('paidAmountEUR')">
@@ -47,7 +47,7 @@
         </div>
 
         <div class="mt-4">
-          <h3>Change:</h3>
+          <h3>Ресто:</h3>
           <div class="row">
             <!-- Евро в лявата колона -->
             <div class="col-md-6">
