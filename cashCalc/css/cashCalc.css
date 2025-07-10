@@ -30,7 +30,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 50px;
+    margin: 20px auto;
 }
 
 .calculator-box h3, .calculator-box h4 {

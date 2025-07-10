@@ -147,7 +147,7 @@ footer {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .info-page {
         margin: 1rem;
         text-align: center;
